@@ -4,19 +4,22 @@ def reload
   load 'config/environment.rb'
 end
 
-a1 = Artist.new("Bob", 32)
-a2 = Artist.new("Michelangelo", 533) 
-a3 = Artist.new("Shepard", 28)
+## AIRBNB
+guest1 = Guest.new("Charlie")
+guest2 = Guest.new("Sarah")
+listing1 = Listing.new("Country Abode", "Huntsville")
+listing2 = Listing.new("Urban Center", "Houston")
+guest1.book_trip(listing1)
+guest2.book_trip(listing1)
+guest2.book_trip(listing2)
 
-g1 = Gallery.new("Totally A Real Art Gallery", "Tokyo")
-g2 = Gallery.new("Totally Another Real Art Gallery", "Berlin")
-g3 = Gallery.new("Totally Not A Real Art Gallery", "New York")
-g4 = Gallery.new("Totally A Burger Place", "Houston")
+## LYFT
+driver1 = Driver.new("Baby Driver")
+passenger1 = Passenger.new("Aziz Ansari")
 
-p3 = Painting.new("The Creation of Adam 2", 1000034, a2, g3)
-p2 = Painting.new("Happy Little Trees", 845, a1, g3)
-p4 = Painting.new("OBEY", 824003, a3, g3)
-p1 = Painting.new("The Creation of Adam", 32000000, a2, g3)
+ride1 = Ride.new(passenger1, driver1, 14)
+ride2 = Ride.new(passenger1, driver1, 26)
+ride3 = Ride.new(passenger1, driver1, 32)
 
 binding.pry
 0
