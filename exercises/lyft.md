@@ -2,6 +2,11 @@
 
 ## Deliverables
 
+driver <- ride -> passener 
+name  (driver+passenger+distance)  -name 
+
+
+
 You are building an app for a Lyft/Uber competitor
 
 - your models are passengers, drivers, rides
